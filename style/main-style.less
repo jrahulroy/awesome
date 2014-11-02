@@ -1,3 +1,15 @@
+/* Common Styles*/
+h1, h2{
+  color:#C53231;
+  font-weight:600;
+}
+h2{
+  margin-bottom:50px;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 .gi-header{
   position:relative;
   height: 500px;
@@ -15,39 +27,58 @@
     background-size:cover;
     display:block;
     bottom:0px;
-    margin:200px auto 0 auto;
+    margin:0 auto 0 auto;
     background-color: rgba(256, 256, 256, 0.6);
   }
 }
 
-ul, ul li{
-  display:inline-block;
-  list-style-type:none;
+
+
+.gi-about{
+  text-align:center;
+  padding:100px;
+
+  p{
+    font-weight:300;
+    font-size:30px;
+  }
 }
 
+ul, ul li{
+  list-style-type:none;
+  padding:0px;
+}
+
+section.gi-features{
+  padding:50px 0;
+  h2{
+
+  }
+}
 .gi-feature-item{
   height:200px;
-  width:200px;
   display:inline-block;
+  margin-bottom:30px;
 
   .gi-feature-info{
-    position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     transition: all 0.4s ease-in-out;
     transform-style: preserve-3d;
+    margin:0 auto;
   }
   .gi-front{
-    background:red;
-    line-height:20px;
+    background:#06A457;
     font-size:100px;
+    padding-top:24px;
   }
   .gi-back {
     transform: rotate3d(0,1,0,180deg);
-    background: green;
-    line-height:150px;
+    background: #C53231;
     font-size:30px;
+    color:white;
+    padding-top:75px;
 
   }
 }
@@ -66,12 +97,16 @@ ul, ul li{
     backface-visibility: hidden;
 }
 
+section.gi-partners{
+
+}
 .gi-partners-list{
   .gi-partner{
     text-align:center;
+    margin-bottom:30px;
 
     .gi-partner-info{
-      background-color:#405499;
+
       border-radius:15px;
       padding:40px;
       color:#FFF;
@@ -80,7 +115,7 @@ ul, ul li{
       transition: 150ms ease all;
     }
     .gi-partner-info:hover{
-      background:#65c6c3
+      opacity:0.8;
     }
     .gi-partner-info:hover .gi-partner-icon{
       transform:translate(10px, 0);
@@ -98,14 +133,33 @@ ul, ul li{
     }
     .gi-partner-title{
       font-size:24px;
+      margin-top:20px;
     }
   }
 
-  .row{
-    margin-bottom:30px;
+  .gi-partner-twitter{
+    background-color:#61a8f0;
+  }
+  .gi-partner-facebook{
+    background-color:#405499;
+  }
+  .gi-partner-plus{
+    background-color:#e54c3c;
+  }
+  .gi-partner-linkedin{
+    background-color:#007bb6;
+  }
+  .gi-partner-android{
+    background-color:#95C03B;
+  }
+  .gi-partner-windows{
+    background-color:#00ADF1;
   }
 }
 
 section.gi-testimonials{
   display:none;
+}
+section.gi-contact-us{
+  background:#06A457;
 }
