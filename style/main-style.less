@@ -1,0 +1,111 @@
+.gi-header{
+  position:relative;
+  height: 500px;
+  width: 100%;
+  background-image:url('../img/header.jpeg');
+  background-attachment:fixed;
+  background-size:cover;
+  .background{
+
+  }
+  .logo{
+    background-image:url('../img/logo.png');
+    width: 500px;
+    height: 273px;
+    background-size:cover;
+    display:block;
+    bottom:0px;
+    margin:200px auto 0 auto;
+    background-color: rgba(256, 256, 256, 0.6);
+  }
+}
+
+ul, ul li{
+  display:inline-block;
+  list-style-type:none;
+}
+
+.gi-feature-item{
+  height:200px;
+  width:200px;
+  display:inline-block;
+
+  .gi-feature-info{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  .gi-front{
+    background:red;
+    line-height:20px;
+    font-size:100px;
+  }
+  .gi-back {
+    transform: rotate3d(0,1,0,180deg);
+    background: green;
+    line-height:150px;
+    font-size:30px;
+
+  }
+}
+.gi-feature-item:hover .gi-feature-info {
+    transform: rotate3d(0,1,0,-180deg);
+}
+
+.gi-feature-info > div{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align:center;
+    background-position: center center;
+    backface-visibility: hidden;
+}
+
+.gi-partners-list{
+  .gi-partner{
+    text-align:center;
+
+    .gi-partner-info{
+      background-color:#405499;
+      border-radius:15px;
+      padding:40px;
+      color:#FFF;
+      -webkit-transition: 150ms ease all;
+      -o-transition: 150ms ease all;
+      transition: 150ms ease all;
+    }
+    .gi-partner-info:hover{
+      background:#65c6c3
+    }
+    .gi-partner-info:hover .gi-partner-icon{
+      transform:translate(10px, 0);
+    }
+
+
+    span{
+      display:block;
+    }
+    .gi-partner-icon{
+      font-size:100px;
+      -webkit-transition: 500ms ease all;
+      -o-transition: 500ms ease all;
+      transition: 500ms ease all;
+    }
+    .gi-partner-title{
+      font-size:24px;
+    }
+  }
+
+  .row{
+    margin-bottom:30px;
+  }
+}
+
+section.gi-testimonials{
+  display:none;
+}
